@@ -161,7 +161,17 @@
     font-weight: 700;
     text-transform: uppercase;
     transition: 1s;
+    animation: bounce 1s infinite;
 }
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
 .logo-item{
     display: flex;
     justify-content: space-between;
@@ -263,6 +273,27 @@
     font-weight: 700;
     font-size: 45px;
     transition: 1s;
+    width: 43.6%;
+    border-right: 5px solid black;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 4s infinite,
+        cursor .7s step-end;
+}
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        border-right: none;
+    }
 }
 .work-list{
     display: flex;
@@ -379,7 +410,14 @@
     font-family: "Unbounded", serif;
     text-transform: uppercase;
     transition: 1s;
+    transform: skewX(-30deg);
+    animation: skew 2s linear infinite;
 }
+@keyframes skew {
+    to {
+      transform: skewX(0);
+    }
+  }
 .last-list{
     display: flex;
     gap: 42px;
