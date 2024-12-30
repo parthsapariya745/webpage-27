@@ -602,6 +602,9 @@
     }
 }
 @media (max-width : 768px) {
+    .nav-menu{
+        flex-direction: row-reverse;
+    }
     .nav-menu a{ 
         display: none;
     }
